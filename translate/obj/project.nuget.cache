@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vzJc6S5HDWjOFWB6PrG2vJJIUQSyjpsybwSaJAe3HluxxRbQu+YM+o4iW3J/ctOKSQl04Gbr8kFgQ/4Jxy19AQ==",
+  "dgSpecHash": "jsWGLsLT7fBG1/KFoIMMPwgCU5lxCBumudRUSpA+z1L9AW1SoqC+bMVMtLQhmCODaQQ05lUqpmcL5ULiEhmMzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lequy\\Downloads\\translate\\translate.csproj",
+  "projectFilePath": "C:\\Users\\lequy\\Downloads\\New folder\\translate\\translate\\translate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lequy\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\lequy\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",

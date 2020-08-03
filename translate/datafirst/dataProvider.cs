@@ -7,7 +7,10 @@ namespace translate.datafirst
     public class dataProvider{
         private static dataProvider instance;
         public static dataProvider Instance{
-            get{if (instance==null) instance= new dataProvider();return dataProvider.Instance;}
+            get{
+                if (instance==null) 
+                    return instance = new dataProvider();
+                return dataProvider.Instance;}
             private set {dataProvider.instance= value;}
         }
         private dataProvider(){}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lequy\\Downloads\\translate\\translate.csproj": {}
+    "C:\\Users\\lequy\\Downloads\\New folder\\translate\\translate\\translate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lequy\\Downloads\\translate\\translate.csproj": {
+    "C:\\Users\\lequy\\Downloads\\New folder\\translate\\translate\\translate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lequy\\Downloads\\translate\\translate.csproj",
+        "projectUniqueName": "C:\\Users\\lequy\\Downloads\\New folder\\translate\\translate\\translate.csproj",
         "projectName": "translate",
-        "projectPath": "C:\\Users\\lequy\\Downloads\\translate\\translate.csproj",
+        "projectPath": "C:\\Users\\lequy\\Downloads\\New folder\\translate\\translate\\translate.csproj",
         "packagesPath": "C:\\Users\\lequy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lequy\\Downloads\\translate\\obj\\",
+        "outputPath": "C:\\Users\\lequy\\Downloads\\New folder\\translate\\translate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lequy\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,11 +3,17 @@ using System.Data;
 using translate.dtos;
 
 namespace translate.datafirst{
-    public class user{
+    public class user
+    {
         private static user instance;
         public static user Instance{
-            get{if (instance==null) instance= new user();return user.Instance;}
-            private set => instance= value;
+            get
+            {
+                if (instance==null)
+                    return instance = new user();
+                return user.Instance;
+            }
+            private set {user.instance= value;}
         }
         public List<userdto> showAllUser(){
             string query="select * from users";
@@ -18,6 +24,16 @@ namespace translate.datafirst{
                 userdtos.Add(userdto);
             }
             return userdtos;
+        }
+        public int checklogin(login lg){
+            string query ="exec checkuser @1 , @2 ";
+            DataTable data = dataProvider.Instance.ExcuteQuery(query,new object[]{lg.username,lg.password});
+            if(data==null){
+                return 0;
+            }else
+            {
+                return int.Parse(data.ToString());
+            }
         }
     }
 }

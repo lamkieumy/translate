@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using translate.Models;
 using translate.datafirst;
 using Microsoft.AspNetCore.Cors;
+using translate.dtos;
 
 namespace translate.Controllers
 {
@@ -25,12 +26,19 @@ namespace translate.Controllers
             try
             {
                 var users = user.Instance.showAllUser();
-                return View();
+                return View(users);
             }catch(Exception ex){
                 return BadRequest(ex);
             }
-
-
+        }
+        [HttpGet]
+        public IActionResult login(){
+            return View();
+        }
+        [HttpPost]
+        public IActionResult login(login lg){
+            var users = user.Instance.checklogin(lg);
+            return View(users);
         }
 
         public IActionResult Privacy()
@@ -38,10 +46,5 @@ namespace translate.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
